@@ -6,9 +6,9 @@ import org.hibernate.validator.constraints.Length;
 import javax.persistence.*;
 
 @Entity
-public class Board {
+public class Posts {
     @Id
-    @Column(name = "board_id")
+    @Column(name = "BOARD_ID")
     @GeneratedValue
     private Long id;
 
