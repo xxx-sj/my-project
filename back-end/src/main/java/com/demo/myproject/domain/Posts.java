@@ -1,10 +1,7 @@
 package com.demo.myproject.domain;
 
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.hibernate.validator.constraints.Length;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +10,7 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 public class Posts {
+
     @Id
     @Column(name = "PTS_ID")
     @GeneratedValue
