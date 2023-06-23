@@ -1,20 +1,23 @@
 package com.demo.myproject.domain;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.*;
 
 @Entity
+@Getter
+@NoArgsConstructor
 public class Comment {
 
     @Id
     @GeneratedValue
-    @Column(name = "COMMENT_ID")
+    @Column(name = "CMT_ID")
     private Long id;
 
-    @Column(name = "content")
+    @Column(name = "CMT_CONTENT")
     private String content;
 
     @ManyToOne(fetch = FetchType.LAZY)
