@@ -1,5 +1,7 @@
 package com.demo.myproject.domain;
 
+import com.demo.myproject.repository.PostsRepository;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
@@ -24,4 +26,15 @@ public class Posts {
 
     @OneToMany(mappedBy = "posts", fetch = FetchType.LAZY)
     private List<Comment> commentList = new ArrayList<>();
+
+    @Builder
+    public Posts(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
 }
