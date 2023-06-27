@@ -4,7 +4,7 @@ import com.demo.myproject.domain.Posts;
 import com.demo.myproject.dto.posts.PostsResponseDto;
 import com.demo.myproject.dto.posts.PostsSaveRequestDto;
 import com.demo.myproject.dto.posts.PostsUpdateRequestDto;
-import com.demo.myproject.repository.PostsRepository;
+import com.demo.myproject.repository.posts.PostsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

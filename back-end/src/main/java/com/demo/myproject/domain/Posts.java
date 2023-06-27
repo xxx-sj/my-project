@@ -1,6 +1,5 @@
 package com.demo.myproject.domain;
 
-import com.demo.myproject.repository.PostsRepository;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
