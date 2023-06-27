@@ -21,4 +21,8 @@ public class Comment {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "POSTS_ID")
     private Posts posts;
+
+    public void update(String content) {
+        this.content = content;
+    }
 }
