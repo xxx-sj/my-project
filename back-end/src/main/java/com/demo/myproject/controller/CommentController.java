@@ -28,10 +28,10 @@ public class CommentController {
 //    }
 
     //Parameter 필요
-//    @PostMapping("")
-//    public Long save(@RequestBody CommentSaveRequestDto requestDto) {
-//        return commentService.save(requestDto);
-//    }
+    @PostMapping("")
+    public Long save(@PathVariable(name = "postsId") Long postsId, @RequestBody CommentSaveRequestDto requestDto) {
+        return commentService.save(postsId, requestDto);
+    }
 
     @PutMapping("{id}")
     public Long update(@PathVariable Long id, @RequestBody CommentUpdateRequestDto requestDto) {
