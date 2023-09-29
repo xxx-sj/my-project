@@ -1,4 +1,4 @@
-package com.demo.myproject.controller;
+package com.demo.myproject.controller.comment;
 
 import com.demo.myproject.dto.comment.CommentResponseDto;
 import com.demo.myproject.dto.comment.CommentSaveRequestDto;

@@ -1,6 +1,6 @@
 package com.demo.myproject.dto.comment;
 
-import com.demo.myproject.domain.Comment;
+import com.demo.myproject.domain.comment.Comment;
 import lombok.Getter;
 
 @Getter

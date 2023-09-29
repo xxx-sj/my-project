@@ -1,4 +1,4 @@
-package com.demo.myproject.controller;
+package com.demo.myproject.controller.posts;
 
 import com.demo.myproject.dto.posts.PostsResponseDto;
 import com.demo.myproject.dto.posts.PostsSaveRequestDto;

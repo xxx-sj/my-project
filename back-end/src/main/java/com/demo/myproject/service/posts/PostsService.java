@@ -1,6 +1,6 @@
 package com.demo.myproject.service.posts;
 
-import com.demo.myproject.domain.Posts;
+import com.demo.myproject.domain.posts.Posts;
 import com.demo.myproject.dto.posts.PostsResponseDto;
 import com.demo.myproject.dto.posts.PostsSaveRequestDto;
 import com.demo.myproject.dto.posts.PostsUpdateRequestDto;

@@ -1,7 +1,7 @@
 package com.demo.myproject.service.comment;
 
-import com.demo.myproject.domain.Comment;
-import com.demo.myproject.domain.Posts;
+import com.demo.myproject.domain.comment.Comment;
+import com.demo.myproject.domain.posts.Posts;
 import com.demo.myproject.dto.comment.CommentResponseDto;
 import com.demo.myproject.dto.comment.CommentSaveRequestDto;
 import com.demo.myproject.dto.comment.CommentUpdateRequestDto;
@@ -34,7 +34,7 @@ public class CommentService {
         Posts posts = postsRepository.findById(postsId).orElseThrow(
                 () -> new IllegalArgumentException("posts 가 존재하지 않습니다. =>" + postsId));
 
-        Comment comment = Comment.createComment(posts, requestDto.getContent());
+        Comment comment = new Comment(requestDto.getContent()).createComment(posts);
 
         return commentRepository.save(comment).getId();
     }
