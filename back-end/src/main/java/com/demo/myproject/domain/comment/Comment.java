@@ -1,5 +1,7 @@
-package com.demo.myproject.domain;
+package com.demo.myproject.domain.comment;
 
+import com.demo.myproject.common.BaseEntity;
+import com.demo.myproject.domain.posts.Posts;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +13,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString(of = {"id", "content"})
-public class Comment {
+public class Comment extends BaseEntity {
 
     @Id
     @GeneratedValue
@@ -33,11 +35,9 @@ public class Comment {
         posts.getCommentList().add(this);
     }
 
-    public static Comment createComment(Posts posts, String content) {
-        Comment comment = new Comment(content);
-        comment.setPosts(posts);
-
-        return comment;
+    public Comment createComment(Posts posts) {
+        this.setPosts(posts);
+        return this;
     }
 
     public void update(String content) {

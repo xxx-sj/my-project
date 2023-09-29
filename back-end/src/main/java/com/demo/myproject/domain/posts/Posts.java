@@ -1,8 +1,12 @@
-package com.demo.myproject.domain;
+package com.demo.myproject.domain.posts;
 
+import com.demo.myproject.common.BaseEntity;
+import com.demo.myproject.domain.comment.Comment;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +14,8 @@ import java.util.List;
 @Entity
 @Getter
 @NoArgsConstructor
-public class Posts {
+@ToString(of = {"id", "title", "content"})
+public class Posts extends BaseEntity {
 
     @Id
     @Column(name = "PTS_ID")
