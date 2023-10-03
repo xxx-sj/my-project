@@ -67,9 +67,9 @@ class CommentRepositoryTest {
         System.out.println("reference.getClass() = " + reference.getClass());
 //        System.out.println("reference = " + reference.getTitle());
 
-        em.detach(reference);
-
-        System.out.println(reference.getTitle());
-        System.out.println(reference.getContent());
+//        em.detach(reference);
+//
+//        System.out.println(reference.getTitle());
+//        System.out.println(reference.getContent());
     }
 }
