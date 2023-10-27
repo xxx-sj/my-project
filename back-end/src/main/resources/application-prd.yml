@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  datasource:
+    url: jdbc:h2:tcp://localhost/D:\H2\db\my-project
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: create
+
+logging:
+  level:
+    org.hibernate:
+      # sql lever
+      sql: debug
+      # sql show sql parameter
+      type: trace
+
+
