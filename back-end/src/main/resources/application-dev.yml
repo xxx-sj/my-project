@@ -25,4 +25,7 @@ logging:
       # sql show sql parameter
       type: trace
 
+  file:
+    name: my-project
+    path: ./log
 
