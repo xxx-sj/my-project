@@ -1,7 +1,7 @@
-package com.demo.myproject.domain.posts;
+package com.demo.myproject.domain.posts.domain;
 
-import com.demo.myproject.common.BaseEntity;
-import com.demo.myproject.domain.comment.Comment;
+import com.demo.myproject.global.common.BaseEntity;
+import com.demo.myproject.domain.comment.domain.Comment;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,13 +1,10 @@
-package com.demo.myproject.controller.comment;
+package com.demo.myproject.domain.comment.controller;
 
-import com.demo.myproject.dto.comment.CommentResponseDto;
-import com.demo.myproject.dto.comment.CommentSaveRequestDto;
-import com.demo.myproject.dto.comment.CommentUpdateRequestDto;
-import com.demo.myproject.service.comment.CommentService;
+import com.demo.myproject.domain.comment.dto.CommentSaveRequestDto;
+import com.demo.myproject.domain.comment.dto.CommentUpdateRequestDto;
+import com.demo.myproject.domain.comment.service.CommentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/comment")

@@ -1,9 +1,9 @@
-package com.demo.myproject.controller.posts;
+package com.demo.myproject.domain.posts.controller;
 
-import com.demo.myproject.dto.posts.PostsResponseDto;
-import com.demo.myproject.dto.posts.PostsSaveRequestDto;
-import com.demo.myproject.dto.posts.PostsUpdateRequestDto;
-import com.demo.myproject.service.posts.PostsService;
+import com.demo.myproject.domain.posts.dto.PostsResponseDto;
+import com.demo.myproject.domain.posts.dto.PostsSaveRequestDto;
+import com.demo.myproject.domain.posts.dto.PostsUpdateRequestDto;
+import com.demo.myproject.domain.posts.service.PostsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

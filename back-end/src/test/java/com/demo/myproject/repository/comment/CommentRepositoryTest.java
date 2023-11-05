@@ -1,8 +1,9 @@
 package com.demo.myproject.repository.comment;
 
-import com.demo.myproject.domain.comment.Comment;
-import com.demo.myproject.domain.posts.Posts;
-import com.demo.myproject.repository.posts.PostsRepository;
+import com.demo.myproject.domain.comment.domain.Comment;
+import com.demo.myproject.domain.comment.repository.CommentRepository;
+import com.demo.myproject.domain.posts.domain.Posts;
+import com.demo.myproject.domain.posts.repository.PostsRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -18,7 +19,8 @@ import javax.persistence.PersistenceContext;
 @Transactional
 class CommentRepositoryTest {
 
-    @Autowired CommentRepository commentRepository;
+    @Autowired
+    CommentRepository commentRepository;
     @Autowired PostsRepository postsRepository;
     @PersistenceContext
     EntityManager em;

@@ -1,12 +1,12 @@
-package com.demo.myproject.service.comment;
+package com.demo.myproject.domain.comment.service;
 
-import com.demo.myproject.domain.comment.Comment;
-import com.demo.myproject.domain.posts.Posts;
-import com.demo.myproject.dto.comment.CommentResponseDto;
-import com.demo.myproject.dto.comment.CommentSaveRequestDto;
-import com.demo.myproject.dto.comment.CommentUpdateRequestDto;
-import com.demo.myproject.repository.comment.CommentRepository;
-import com.demo.myproject.repository.posts.PostsRepository;
+import com.demo.myproject.domain.comment.domain.Comment;
+import com.demo.myproject.domain.posts.domain.Posts;
+import com.demo.myproject.domain.comment.dto.CommentResponseDto;
+import com.demo.myproject.domain.comment.dto.CommentSaveRequestDto;
+import com.demo.myproject.domain.comment.dto.CommentUpdateRequestDto;
+import com.demo.myproject.domain.comment.repository.CommentRepository;
+import com.demo.myproject.domain.posts.repository.PostsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

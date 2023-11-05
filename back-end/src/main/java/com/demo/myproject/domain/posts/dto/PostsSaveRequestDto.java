@@ -1,6 +1,6 @@
-package com.demo.myproject.dto.posts;
+package com.demo.myproject.domain.posts.dto;
 
-import com.demo.myproject.domain.posts.Posts;
+import com.demo.myproject.domain.posts.domain.Posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
