@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="wrap">
+    <c-tab @change-grid="changeGrid"/>
+    <grid-tab :grid-data="activeGrid"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import GridTab from "@/components/GridTab.vue";
+import CTab from "@/components/Ctab.vue";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CTab,
+    GridTab
+  },
+
+  data() {
+    return {
+      activeGrid: null,
+    }
+  },
+
+  methods: {
+    changeGrid(grid) {
+      this.activeGrid = grid;
+    }
   }
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
